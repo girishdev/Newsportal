@@ -23,10 +23,11 @@ $the_query = new WP_Query( $qargs );
 					<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
 						<?php $special_class = ( 0 === $the_query->current_post ) ? 'main-featured-news-item' : ''; ?>
+						<?php $special_class2 = ( 0 !== $the_query->current_post ) ? 'featured-sub' : ''; ?>
 						<div class="featured-news-item <?php echo esc_attr( $special_class ); ?>">
 							<div class="featured-news-wrapper">
 								<?php if ( has_post_thumbnail() ) : ?>
-									<div class="featured-news-thumb">
+									<div class="featured-news-thumb <?php echo esc_attr( $special_class2 ); ?>">
 										<a href="<?php the_permalink(); ?>">
 											<?php
 											$img_attributes = array( 'class' => 'aligncenter' );
@@ -35,7 +36,7 @@ $the_query = new WP_Query( $qargs );
 										</a>
 									</div>
 								<?php else : ?>
-									<div class="featured-news-thumb">
+									<div class="featured-news-thumb <?php echo esc_attr( $special_class2 ); ?>">
 										<img src="<?php echo esc_url ( get_template_directory_uri().'/images/no-image.png' ); ?>" alt="" />
 									</div>
 								<?php endif; ?>
