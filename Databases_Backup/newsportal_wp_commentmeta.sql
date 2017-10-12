@@ -30,7 +30,7 @@ CREATE TABLE `wp_commentmeta` (
   PRIMARY KEY (`meta_id`),
   KEY `comment_id` (`comment_id`),
   KEY `meta_key` (`meta_key`(191))
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -39,6 +39,7 @@ CREATE TABLE `wp_commentmeta` (
 
 LOCK TABLES `wp_commentmeta` WRITE;
 /*!40000 ALTER TABLE `wp_commentmeta` DISABLE KEYS */;
+INSERT INTO `wp_commentmeta` VALUES (7,3,'_wp_trash_meta_status','0'),(8,3,'_wp_trash_meta_time','1507806384'),(9,4,'_wp_trash_meta_status','1'),(10,4,'_wp_trash_meta_time','1507806387');
 /*!40000 ALTER TABLE `wp_commentmeta` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -51,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-10-10 18:50:25
+-- Dump completed on 2017-10-12 18:52:32

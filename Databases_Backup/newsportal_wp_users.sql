@@ -37,7 +37,7 @@ CREATE TABLE `wp_users` (
   KEY `user_login_key` (`user_login`),
   KEY `user_nicename` (`user_nicename`),
   KEY `user_email` (`user_email`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -46,7 +46,7 @@ CREATE TABLE `wp_users` (
 
 LOCK TABLES `wp_users` WRITE;
 /*!40000 ALTER TABLE `wp_users` DISABLE KEYS */;
-INSERT INTO `wp_users` VALUES (1,'admin','$P$BMnP.3tBT1bOh.mIWoHvYnk2T9oBlr1','admin','girish@qwickbit.com','','2017-10-09 13:00:04','',0,'admin');
+INSERT INTO `wp_users` VALUES (1,'admin','$P$BMnP.3tBT1bOh.mIWoHvYnk2T9oBlr1','admin','girish@qwickbit.com','','2017-10-09 13:00:04','',0,'admin'),(6,'kumar','$P$Bb27pxAw2dk71nCANqTgXqTLMraRdB1','kumar','kumar@gmail.com','','2017-10-12 12:56:59','1507813081:$P$BujJfrJSq5SWMdLhyW1GZfmzhEBXDG/',0,'kumar');
 /*!40000 ALTER TABLE `wp_users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -59,4 +59,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-10-10 18:50:25
+-- Dump completed on 2017-10-12 18:52:31

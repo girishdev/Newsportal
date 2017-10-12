@@ -1,3 +1,8 @@
+Using ("magazine-point theme") for This Newsportal:-
+    https://wordpress.org/themes/magazine-point/
+    https://axlethemes.com/theme-demo/?demo=magazine-point-pro
+    https://axlethemes.com/documentation/magazine-point/#Installation
+----------------------------------------------------------------------------------
 We have are maily focusing on(also image are provided for this):-
     Sports
     Business
@@ -45,4 +50,40 @@ Listing all functions:-
     is_home();
     is_active_sidebar();
     dynamic_sidebar();
+----------------------------------------------------------------------------------
 
+Username:- reporter1
+Password:- )u$uh2qbJ8dTf&80$z#!zSys
+Role:- Author/Contributor/Editor
+
+Username:- reporter1 editor
+Password:- TC1M*OHJSwe1zZt#q#EHj%i3
+Role:- Author/Contributor/Editor
+
+-----------------------------------------------------------------------------------
+By Using Plugin:-
+    Username:- reporter2
+    Password:- jEs%inFlvCkz4K$JsG^gQTaK
+
+    Username:- kumar
+    Password:- 8Ku7c0qLodPzHKIpI7Ze)WUH
+
+newsportal_wp_commentmeta.sql
+newsportal_wp_options.sql
+newsportal_wp_termmeta.sql
+newsportal_wp_term_taxonomy.sql
+newsportal_wp_comments.sql
+newsportal_wp_postmeta.sql
+newsportal_wp_term_relationships.sql
+newsportal_wp_usermeta.sql
+newsportal_wp_links.sql
+newsportal_wp_posts.sql
+newsportal_wp_terms.sql
+newsportal_wp_users.sql
+
+
+scp -r -i infoTRAKDev.pem Newsportal.tar ubuntu@52.91.254.245:/var/www/html/
+mysql -u root -p newsportal < newsportal_wp_commentmeta.sql
+
+UPDATE wp_options SET option_value="http://localhost/Newsportal" WHERE option_name="siteurl"
+UPDATE wp_options SET option_value="http://52.91.254.245/Newsportal" WHERE option_name="siteurl";

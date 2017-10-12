@@ -44,7 +44,7 @@ CREATE TABLE `wp_comments` (
   KEY `comment_date_gmt` (`comment_date_gmt`),
   KEY `comment_parent` (`comment_parent`),
   KEY `comment_author_email` (`comment_author_email`(10))
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -53,7 +53,7 @@ CREATE TABLE `wp_comments` (
 
 LOCK TABLES `wp_comments` WRITE;
 /*!40000 ALTER TABLE `wp_comments` DISABLE KEYS */;
-INSERT INTO `wp_comments` VALUES (1,1,'A WordPress Commenter','wapuu@wordpress.example','https://wordpress.org/','','2017-10-09 13:00:05','2017-10-09 13:00:05','Hi, this is a comment.\nTo get started with moderating, editing, and deleting comments, please visit the Comments screen in the dashboard.\nCommenter avatars come from <a href=\"https://gravatar.com\">Gravatar</a>.',0,'1','','',0,0);
+INSERT INTO `wp_comments` VALUES (1,1,'A WordPress Commenter','wapuu@wordpress.example','https://wordpress.org/','','2017-10-09 13:00:05','2017-10-09 13:00:05','Hi, this is a comment.\nTo get started with moderating, editing, and deleting comments, please visit the Comments screen in the dashboard.\nCommenter avatars come from <a href=\"https://gravatar.com\">Gravatar</a>.',0,'1','','',0,0),(2,106,'admin','girish@qwickbit.com','','127.0.0.1','2017-10-12 10:55:27','2017-10-12 10:55:27','This is comment on Sports2 of post2',0,'post-trashed','Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:56.0) Gecko/20100101 Firefox/56.0','',0,1),(3,106,'reporter1','reporter1@gmail.com','','::1','2017-10-12 11:01:24','2017-10-12 11:01:24','Ok replyed from reporter1',0,'post-trashed','Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.100 Chrome/61.0.3163.100 Safari/537.36','',2,2),(4,106,'reporter1','reporter1@gmail.com','','::1','2017-10-12 11:05:00','2017-10-12 11:05:00','Second reply from reporter1',0,'post-trashed','Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.100 Chrome/61.0.3163.100 Safari/537.36','',3,2);
 /*!40000 ALTER TABLE `wp_comments` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -66,4 +66,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-10-10 18:50:25
+-- Dump completed on 2017-10-12 18:52:31
