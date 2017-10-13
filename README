@@ -62,11 +62,12 @@ Role:- Author/Contributor/Editor
 
 -----------------------------------------------------------------------------------
 By Using Plugin:-
-    Username:- reporter2
-    Password:- jEs%inFlvCkz4K$JsG^gQTaK
 
     Username:- kumar
     Password:- 8Ku7c0qLodPzHKIpI7Ze)WUH
+
+    Username:- Reporter
+    Password:- L1^Ay@*xNYli49YTsf7O(q6)
 
 newsportal_wp_commentmeta.sql
 newsportal_wp_options.sql
@@ -87,3 +88,25 @@ mysql -u root -p newsportal < newsportal_wp_commentmeta.sql
 
 UPDATE wp_options SET option_value="http://localhost/Newsportal" WHERE option_name="siteurl"
 UPDATE wp_options SET option_value="http://52.91.254.245/Newsportal" WHERE option_name="siteurl";
+
+=======================================
+Client requirements:-
+    News portal should have
+        - Options to add "News Reporter"
+        - WordPress Admin login should be customizable
+        - Admin portal
+        -
+
+    + "News Reporter" can only report news by adding it into posts, that has to approval by Admin in order to publish
+    on website
+
+    + Admin can add Posts, Pages, Users and etc....
+
+    + Fixed image height issues
+
+
+=======================================
+
+sudo apt-get purge --auto-remove brackets
+sudo apt-get purge --auto-remove atom
+
