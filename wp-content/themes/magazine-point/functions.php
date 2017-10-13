@@ -200,3 +200,16 @@ add_action( 'wp_enqueue_scripts', 'magazine_point_scripts' );
 
 // Load starting file.
 require_once trailingslashit( get_template_directory() ) . 'includes/start.php';
+
+// Add logo to admin page
+function my_login_logo() { ?>
+    <style type="text/css">
+        #login h1 a, .login h1 a {
+            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/news_logo.jpg);
+            background-size: 250px 150px;
+            width: 300px;
+            height: 150px;
+        }
+    </style>
+<?php }
+//add_action( 'login_enqueue_scripts', 'my_login_logo' );
