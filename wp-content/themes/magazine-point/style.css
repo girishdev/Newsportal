@@ -3734,7 +3734,7 @@ div.wpcf7 {
     }
 
     .sidr-open #mobile-trigger {
-      transition: inherit;
+      /*transition: inherit;*/
     }
 
     #mobile-trigger {
@@ -3754,9 +3754,9 @@ div.wpcf7 {
     }
 
     .sidr-open #mobile-trigger {
-        padding-left: 275px;
-        text-align: left;
-        transition: inherit;
+        /*padding-left: 275px;*/
+        /*text-align: left;*/
+        /*transition: inherit;*/
     }
 
     #masthead {

@@ -204,9 +204,9 @@ if ( ! function_exists( 'magazine_point_footer_copyright' ) ) :
 			</div>
 		<?php endif; ?>
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'magazine-point' ) ); ?>"><?php printf( esc_html__( 'Powered by %s', 'magazine-point' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( '%1$s by %2$s', 'magazine-point' ), 'Magazine Point', '<a href="https://axlethemes.com">Axle Themes</a>' ); ?>
+			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'magazine-point' ) ); ?>"><?php printf( esc_html__( 'Powered by %s', 'magazine-point' ), 'Qwickbit' ); ?></a>
+            <!-- <span class="sep"> | </span> -->
+            <?php //printf( esc_html__( '%1$s by %2$s', 'magazine-point' ), 'Magazine Point', '<a href="https://axlethemes.com">Axle Themes</a>' ); ?>
 		</div>
 		<?php
 	}
